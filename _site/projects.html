@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>projects – Claire Fraser</title>
+<title>projects – Claire Fraser | Bioinformatics Portfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -72,9 +72,10 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -82,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Claire Fraser</span>
+    <span class="navbar-title">Claire Fraser | Bioinformatics Portfolio</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -95,18 +96,25 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
-<span class="menu-text">Projects</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="./projects/seq-visualizer.html">
+ <span class="dropdown-text">NGS Figure Generator</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./tools.html"> 
-<span class="menu-text">Tools</span></a>
+        <li>
+    <a class="dropdown-item" href="./projects/ont-methylation.html">
+ <span class="dropdown-text">ONT Methylation Pipeline</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+        <li>
+    <a class="dropdown-item" href="./projects/sars-cov2.html">
+ <span class="dropdown-text">SARS-CoV-2 Evolution</span></a>
   </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -118,23 +126,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#projects" id="toc-projects" class="nav-link active" data-scroll-target="#projects">Projects</a>
-  <ul class="collapse">
-  <li><a href="#featured-projects" id="toc-featured-projects" class="nav-link" data-scroll-target="#featured-projects">Featured Projects</a>
-  <ul class="collapse">
-  <li><a href="#ont-methylation-pipeline" id="toc-ont-methylation-pipeline" class="nav-link" data-scroll-target="#ont-methylation-pipeline">ONT Methylation Pipeline</a></li>
-  <li><a href="#ngs-figure-generator" id="toc-ngs-figure-generator" class="nav-link" data-scroll-target="#ngs-figure-generator">NGS Figure Generator</a></li>
-  <li><a href="#sars-cov-2-evolutionary-analysis" id="toc-sars-cov-2-evolutionary-analysis" class="nav-link" data-scroll-target="#sars-cov-2-evolutionary-analysis">SARS-CoV-2 Evolutionary Analysis</a></li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 

@@ -15,9 +15,6 @@ venv/
 .ipynb_checkpoints/
 .quarto/
 
-# Quarto render output
-_site/
-
 # Logs
 *.log
 
@@ -31,3 +28,5 @@ _site/
 
 # Mac/Linux temp
 *~
+/.quarto/
+**/*.quarto_ipynb

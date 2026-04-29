@@ -1,0 +1,5 @@
+# About
+
+I am a computational biologist with experience in RNA-seq, single-cell analysis, and bioinformatics pipeline development.
+
+My work focuses on reproducibility, scalability, and making complex biological data more interpretable.

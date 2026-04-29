@@ -1,0 +1,12 @@
+# Projects
+
+## Featured Projects
+
+### ONT Methylation Pipeline
+Scalable pipeline for long-read methylation analysis.
+
+### [NGS Figure Generator](projects/seq-visualizer.qmd)
+Interactive tool for generating publication-ready figures from high-throughput sequencing data, with customizable visualizations to highlight key biological insights.
+
+### SARS-CoV-2 Evolutionary Analysis
+Phylogenetic and evolutionary analysis of SARS-CoV-2.

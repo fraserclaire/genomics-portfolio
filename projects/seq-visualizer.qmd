@@ -1,0 +1,311 @@
+# NGS Figure Generator
+
+## Overview
+The NGS Figure Generator is an interactive tool for transforming high-throughput sequencing outputs into publication-ready figures. It enables users to generate, customize, and refine visualizations to clearly communicate key biological insights.
+
+---
+
+## Problem
+High-throughput sequencing workflows often produce complex outputs that require extensive post-processing to visualize effectively.
+
+Researchers frequently:
+
+- spend significant time manually formatting figures for publication  
+- rely on static plots that are difficult to iteratively refine  
+- lack intuitive tools for exploring and highlighting key signals  
+
+This creates a gap between **data generation** and **effective scientific communication**.
+
+---
+
+## Approach
+I developed this tool to streamline the transition from processed sequencing data to publication-quality figures.
+
+The design emphasizes:
+
+- rapid generation of standard bioinformatics plots  
+- interactive adjustment of visualization parameters  
+- reproducible workflows for consistent figure generation  
+
+---
+
+## Key Features
+
+- **Interactive figure generation**
+  - dynamically adjust thresholds and visualization parameters  
+
+- **Multiple visualization types**
+  - support for volcano plots and heatmaps for expression analysis  
+
+- **Customizable outputs**
+  - refine annotations, clustering, and visual emphasis  
+
+- **Publication-ready formatting**
+  - generate clean, structured figures suitable for manuscripts  
+
+- **Extensible architecture**
+  - adaptable to multiple sequencing-based analyses  
+
+---
+
+## Example Use Cases
+
+- Differential expression visualization (e.g., volcano plots)  
+- Expression pattern analysis across samples (heatmaps)  
+- Exploratory analysis of gene-level signals  
+- Comparative visualization across experimental conditions  
+
+---
+
+## Interactive Visualization
+
+---
+
+### Differential Expression Visualization - Interactive Volcano Plot
+
+This example demonstrates a volcano plot generated from differential expression analysis. Users can explore differential expression results and dynamically identify significant genes.
+
+```{python}
+#| echo: false
+#| fig-width: 8
+#| fig-height: 5
+
+import plotly.graph_objects as go
+import numpy as np
+import pandas as pd
+
+np.random.seed(42)
+
+# Generate data
+genes = [f"Gene{i}" for i in range(1, 101)]
+
+log2fc = np.concatenate([
+    np.random.normal(0, 0.5, size=70),
+    np.random.uniform(-3, 3, size=30)
+])
+
+pvalues = np.concatenate([
+    np.random.uniform(0.05, 0.5, size=70),
+    np.random.uniform(0.0001, 0.05, size=30)
+])
+
+neg_log10_pval = -np.log10(pvalues)
+
+df = pd.DataFrame({
+    "gene": genes,
+    "log2fc": log2fc,
+    "pvalue": pvalues,
+    "neg_log10_pval": neg_log10_pval
+})
+
+# Threshold
+p_thresh = 0.05
+fc_thresh = 1
+
+up = (df["log2fc"] > fc_thresh) & (df["pvalue"] < p_thresh)
+down = (df["log2fc"] < -fc_thresh) & (df["pvalue"] < p_thresh)
+background = ~(up | down)
+
+fig = go.Figure()
+
+# Upregulated (red)
+fig.add_trace(go.Scatter(
+    x=df.loc[up, "log2fc"],
+    y=df.loc[up, "neg_log10_pval"],
+    mode='markers',
+    marker=dict(color='red', size=8),
+    name='Upregulated',
+    text=df.loc[up, "gene"],
+    hovertemplate="Gene: %{text}<br>log2FC: %{x:.2f}<br>-log10(p): %{y:.2f}<extra></extra>"
+))
+
+# Downregulated (blue)
+fig.add_trace(go.Scatter(
+    x=df.loc[down, "log2fc"],
+    y=df.loc[down, "neg_log10_pval"],
+    mode='markers',
+    marker=dict(color='blue', size=8),
+    name='Downregulated',
+    text=df.loc[down, "gene"],
+    hovertemplate="Gene: %{text}<br>log2FC: %{x:.2f}<br>-log10(p): %{y:.2f}<extra></extra>"
+))
+
+# Background (gray)
+fig.add_trace(go.Scatter(
+    x=df.loc[background, "log2fc"],
+    y=df.loc[background, "neg_log10_pval"],
+    mode='markers',
+    marker=dict(color='lightgray', size=5),
+    name='Not significant',
+    text=df.loc[background, "gene"],
+    hovertemplate="Gene: %{text}<br>log2FC: %{x:.2f}<br>-log10(p): %{y:.2f}<extra></extra>"
+))
+
+# Add threshold lines
+fig.add_hline(y=-np.log10(p_thresh),line_dash="solid", line_color="blue")
+fig.add_vline(x=1, line_dash="dash", line_color="black")
+fig.add_vline(x=-1, line_dash="dash", line_color="black")
+
+fig.update_layout(
+    xaxis_title="Log2 Fold Change",
+    yaxis_title="-Log10(p-value)",
+    height=500,
+    legend_title="Gene Classification"
+)
+
+# Label top up- and down-regulated genes
+top_n = 5
+
+top_up = df.loc[up].nlargest(top_n, "neg_log10_pval")
+top_down = df.loc[down].nlargest(top_n, "neg_log10_pval")
+
+top_genes = pd.concat([top_up, top_down])
+
+# Sort so labels are spaced in order (prevents stacking)
+top_genes = top_genes.sort_values("neg_log10_pval", ascending=False).reset_index(drop=True)
+
+for i, row in top_genes.iterrows():
+    
+    # alternate vertical spacing
+    vertical_offset = -20 - (i % 3) * 15
+    
+    # push left/right depending on direction
+    horizontal_offset = 30 if row["log2fc"] > 0 else -30
+
+    fig.add_annotation(
+        x=row["log2fc"],
+        y=row["neg_log10_pval"],
+        text=row["gene"],
+        showarrow=True,
+        arrowhead=2,
+        ax=horizontal_offset,
+        ay=vertical_offset,
+        font=dict(size=10),
+        bgcolor="rgba(255,255,255,0.8)",
+        bordercolor="black",
+        borderwidth=1
+    )
+
+fig
+```
+> Users can hover over points to view gene-level details and explore patterns in real time.
+
+---
+
+### Interactive Expression Heatmap
+
+This heatmap visualizes gene expression patterns across samples, enabling identification of clustering patterns and condition-specific signals. Users can refine clustering parameters and visualization settings to highlight key biological trends.
+
+---
+
+```{python}
+#| echo: false
+#| fig-width: 8
+#| fig-height: 5
+
+import plotly.graph_objects as go
+import pandas as pd
+import numpy as np
+
+# --- simulate the CSV users would upload ---
+df = pd.DataFrame({
+    "SampleID": ["Sample1", "Sample2", "Sample3", "Sample4", "Sample5"],
+    "GeneA": [5.1, 7.4, 3.2, 6.5, 4.1],
+    "GeneB": [2.3, 6.1, 2.1, 7.2, 3.5],
+    "GeneC": [3.5, 5.9, 4.7, 5.8, 4.8],
+    "GeneD": [4.8, 7.3, 3.9, 6.9, 5.2],
+    "GeneE": [3.2, 6.8, 4.5, 6.4, 4.7]
+})
+
+# Set SampleID as row labels and drop it from matrix
+df_matrix = df.set_index("SampleID")
+
+# Create heatmap
+fig = go.Figure(
+    data=go.Heatmap(
+        z=df_matrix.values,
+        x=df_matrix.columns,   # Genes
+        y=df_matrix.index,     # Samples
+        colorscale="Viridis",
+        colorbar=dict(title="Expression"),
+        hovertemplate=
+            "Sample: %{y}<br>" +
+            "Gene: %{x}<br>" +
+            "Expression: %{z:.2f}<extra></extra>"
+    )
+)
+
+fig.update_layout(
+    height=500
+)
+
+fig
+```
+
+---
+
+### Customizable Figure Refinement
+
+The tool enables iterative refinement of figures, allowing users to modify parameters such as thresholds, clustering behavior, labeling, and visual emphasis to produce publication-ready outputs.
+
+---
+
+## Technical Implementation
+
+The NGS Figure Generator is built as a modular web-based application that integrates data processing, visualization, and user interaction.
+
+### Frontend
+
+- **Framework:** React (with component libraries such as shadcn/ui)
+- Provides a user-friendly interface for:
+  - uploading sequencing data (CSV/TXT)
+  - selecting visualization parameters
+  - customizing figure outputs in real time
+
+### Backend
+
+- **Language:** Python
+- **Frameworks:** Flask or FastAPI
+- Handles:
+  - data ingestion and preprocessing
+  - computation of analytical outputs
+  - generation of visualizations
+
+### Data Processing & Visualization
+
+- **Data handling:** pandas  
+- **Statistical and ML methods:** scikit-learn (e.g., PCA)  
+- **Visualization libraries:**
+  - Matplotlib / Seaborn → static, publication-ready figures  
+  - Plotly → interactive visualizations  
+
+### Supported Visualizations
+
+- **Volcano & MA plots:** Matplotlib  
+- **Heatmaps:** Seaborn / Matplotlib  
+- **PCA:** scikit-learn (computation) + Plotly (interactive rendering)  
+
+### File Handling
+
+- Supports structured input formats (CSV, TXT)
+- Designed for integration with standard bioinformatics outputs
+
+### Deployment & Reproducibility
+
+- Containerized using Docker for consistent environments  
+- Deployable as a local server-based application  
+
+---
+
+## Future Development
+
+Planned enhancements include:
+
+- support for user-uploaded datasets  
+- additional plot types (PCA, heatmaps, enrichment plots)  
+- enhanced export options for publication workflows  
+
+---
+
+## GitHub Repository
+https://github.com/fraserclaire/seq-visualizer

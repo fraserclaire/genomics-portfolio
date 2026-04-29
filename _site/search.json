@@ -1,0 +1,317 @@
+[
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Scalable pipeline for long-read methylation analysis.\n\n\n\nInteractive tool for generating publication-ready figures from high-throughput sequencing data, with customizable visualizations to highlight key biological insights.\n\n\n\nPhylogenetic and evolutionary analysis of SARS-CoV-2."
+  },
+  {
+    "objectID": "projects.html#featured-projects",
+    "href": "projects.html#featured-projects",
+    "title": "Projects",
+    "section": "",
+    "text": "Scalable pipeline for long-read methylation analysis.\n\n\n\nInteractive tool for generating publication-ready figures from high-throughput sequencing data, with customizable visualizations to highlight key biological insights.\n\n\n\nPhylogenetic and evolutionary analysis of SARS-CoV-2."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Claire Fraser",
+    "section": "",
+    "text": "Bioinformatics | Data Science | NGS Analysis\nI build reproducible bioinformatics pipelines, develop tools for interactive data visualization, and apply evolutionary and statistical methods to extract biological insight from high-throughput sequencing data.\n\n\n\n\n\n\n\nInteractive tool for generating publication-ready figures from sequencing data.\n\n\n\n\n\nEnd-to-end pipeline for methylation analysis using Oxford Nanopore data.\n\n\n\n\n\nPhylogenetic and evolutionary analysis of SARS-CoV-2."
+  },
+  {
+    "objectID": "index.html#featured-work",
+    "href": "index.html#featured-work",
+    "title": "Claire Fraser",
+    "section": "",
+    "text": "ONT Methylation Pipeline\n\nNGS Figure Generator\nSARS-CoV-2 Evolutionary Analysis"
+  },
+  {
+    "objectID": "tools.html",
+    "href": "tools.html",
+    "title": "Tools",
+    "section": "",
+    "text": "Tools\nInteractive tools coming soon.\n\nVolcano Plot Explorer\n\nPCA Explorer"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About\nI am a computational biologist with experience in RNA-seq, single-cell analysis, and bioinformatics pipeline development.\nMy work focuses on reproducibility, scalability, and making complex biological data more interpretable."
+  },
+  {
+    "objectID": "projects/seq-visualizer.html",
+    "href": "projects/seq-visualizer.html",
+    "title": "NGS Figure Generator",
+    "section": "",
+    "text": "The NGS Figure Generator is an interactive tool for transforming high-throughput sequencing outputs into publication-ready figures. It enables users to generate, customize, and refine visualizations to clearly communicate key biological insights."
+  },
+  {
+    "objectID": "projects/seq-visualizer.html#overview",
+    "href": "projects/seq-visualizer.html#overview",
+    "title": "NGS Figure Generator",
+    "section": "",
+    "text": "The NGS Figure Generator is an interactive tool for transforming high-throughput sequencing outputs into publication-ready figures. It enables users to generate, customize, and refine visualizations to clearly communicate key biological insights."
+  },
+  {
+    "objectID": "projects/seq-visualizer.html#problem",
+    "href": "projects/seq-visualizer.html#problem",
+    "title": "NGS Figure Generator",
+    "section": "Problem",
+    "text": "Problem\nHigh-throughput sequencing workflows often produce complex outputs that require extensive post-processing to visualize effectively.\nResearchers frequently:\n\nspend significant time manually formatting figures for publication\n\nrely on static plots that are difficult to iteratively refine\n\nlack intuitive tools for exploring and highlighting key signals\n\nThis creates a gap between data generation and effective scientific communication."
+  },
+  {
+    "objectID": "projects/seq-visualizer.html#approach",
+    "href": "projects/seq-visualizer.html#approach",
+    "title": "NGS Figure Generator",
+    "section": "Approach",
+    "text": "Approach\nI developed this tool to streamline the transition from processed sequencing data to publication-quality figures.\nThe design emphasizes:\n\nrapid generation of standard bioinformatics plots\n\ninteractive adjustment of visualization parameters\n\nreproducible workflows for consistent figure generation"
+  },
+  {
+    "objectID": "projects/seq-visualizer.html#key-features",
+    "href": "projects/seq-visualizer.html#key-features",
+    "title": "NGS Figure Generator",
+    "section": "Key Features",
+    "text": "Key Features\n\nInteractive figure generation\n\ndynamically adjust thresholds and visualization parameters\n\nMultiple visualization types\n\nsupport for volcano plots and heatmaps for expression analysis\n\nCustomizable outputs\n\nrefine annotations, clustering, and visual emphasis\n\nPublication-ready formatting\n\ngenerate clean, structured figures suitable for manuscripts\n\nExtensible architecture\n\nadaptable to multiple sequencing-based analyses"
+  },
+  {
+    "objectID": "projects/seq-visualizer.html#example-use-cases",
+    "href": "projects/seq-visualizer.html#example-use-cases",
+    "title": "NGS Figure Generator",
+    "section": "Example Use Cases",
+    "text": "Example Use Cases\n\nDifferential expression visualization (e.g., volcano plots)\n\nExpression pattern analysis across samples (heatmaps)\n\nExploratory analysis of gene-level signals\n\nComparative visualization across experimental conditions"
+  },
+  {
+    "objectID": "projects/seq-visualizer.html#example-output",
+    "href": "projects/seq-visualizer.html#example-output",
+    "title": "NGS Figure Generator",
+    "section": "Example Output",
+    "text": "Example Output\n\nDifferential Expression Visualization - Volcano Plot\n\nThis example demonstrates a volcano plot generated from differential expression analysis. Users can adjust statistical thresholds and highlighting to emphasize biologically meaningful signals.\n\n\n\nInteractive Volcano Plot\nThis interactive volcano plot demonstrates how users can explore differential expression results and dynamically identify significant genes.\n\n\n                            \n                                            \n\n\n\nUsers can hover over points to view gene-level details and explore patterns in real time.\n\n\n\n\nExpression Heatmap\n\nThis heatmap visualizes gene expression patterns across samples, enabling identification of clustering patterns and condition-specific signals. Users can refine clustering parameters and visualization settings to highlight key biological trends.\n\n\n\n                            \n                                            \n\n\n\n\n\nCustomizable Figure Refinement\nThe tool enables iterative refinement of figures, allowing users to modify parameters such as thresholds, clustering behavior, labeling, and visual emphasis to produce publication-ready outputs."
+  },
+  {
+    "objectID": "projects/seq-visualizer.html#technical-implementation",
+    "href": "projects/seq-visualizer.html#technical-implementation",
+    "title": "NGS Figure Generator",
+    "section": "Technical Implementation",
+    "text": "Technical Implementation\nThe NGS Figure Generator is built as a modular web-based application that integrates data processing, visualization, and user interaction.\n\nFrontend\n\nFramework: React (with component libraries such as shadcn/ui)\nProvides a user-friendly interface for:\n\nuploading sequencing data (CSV/TXT)\nselecting visualization parameters\ncustomizing figure outputs in real time\n\n\n\n\nBackend\n\nLanguage: Python\nFrameworks: Flask or FastAPI\nHandles:\n\ndata ingestion and preprocessing\ncomputation of analytical outputs\ngeneration of visualizations\n\n\n\n\nData Processing & Visualization\n\nData handling: pandas\n\nStatistical and ML methods: scikit-learn (e.g., PCA)\n\nVisualization libraries:\n\nMatplotlib / Seaborn → static, publication-ready figures\n\nPlotly → interactive visualizations\n\n\n\n\nSupported Visualizations\n\nVolcano & MA plots: Matplotlib\n\nHeatmaps: Seaborn / Matplotlib\n\nPCA: scikit-learn (computation) + Plotly (interactive rendering)\n\n\n\nFile Handling\n\nSupports structured input formats (CSV, TXT)\nDesigned for integration with standard bioinformatics outputs\n\n\n\nDeployment & Reproducibility\n\nContainerized using Docker for consistent environments\n\nDeployable as a local server-based application"
+  },
+  {
+    "objectID": "projects/seq-visualizer.html#future-development",
+    "href": "projects/seq-visualizer.html#future-development",
+    "title": "NGS Figure Generator",
+    "section": "Future Development",
+    "text": "Future Development\nPlanned enhancements include:\n\nsupport for user-uploaded datasets\n\nadditional plot types (PCA, heatmaps, enrichment plots)\n\nenhanced export options for publication workflows"
+  },
+  {
+    "objectID": "projects/seq-visualizer.html#github-repository",
+    "href": "projects/seq-visualizer.html#github-repository",
+    "title": "NGS Figure Generator",
+    "section": "GitHub Repository",
+    "text": "GitHub Repository\nhttps://github.com/fraserclaire/seq-visualizer"
+  },
+  {
+    "objectID": "projects/seq-visualizer.html#interactive-visualization",
+    "href": "projects/seq-visualizer.html#interactive-visualization",
+    "title": "NGS Figure Generator",
+    "section": "Interactive Visualization",
+    "text": "Interactive Visualization\n\n\nDifferential Expression Visualization - Interactive Volcano Plot\nThis example demonstrates a volcano plot generated from differential expression analysis. Users can explore differential expression results and dynamically identify significant genes.\n\n\n                            \n                                            \n\n\n\nUsers can hover over points to view gene-level details and explore patterns in real time.\n\n\n\n\nInteractive Expression Heatmap\nThis heatmap visualizes gene expression patterns across samples, enabling identification of clustering patterns and condition-specific signals. Users can refine clustering parameters and visualization settings to highlight key biological trends.\n\n\n\n                            \n                                            \n\n\n\n\n\nCustomizable Figure Refinement\nThe tool enables iterative refinement of figures, allowing users to modify parameters such as thresholds, clustering behavior, labeling, and visual emphasis to produce publication-ready outputs."
+  },
+  {
+    "objectID": "projects/ont-methylation.html",
+    "href": "projects/ont-methylation.html",
+    "title": "ONT Methylation Pipeline",
+    "section": "",
+    "text": "An end-to-end bioinformatics pipeline for detecting and summarizing DNA methylation from Oxford Nanopore sequencing data. The workflow converts raw signal data into interpretable genomic methylation patterns through a structured and reproducible analysis pipeline.\n\n\n\n\nOxford Nanopore sequencing enables direct detection of DNA modifications, but transforming raw signal data into biologically meaningful insights requires coordination across multiple tools and processing steps.\nKey challenges include: - converting raw signal data into high-quality basecalled reads\n- extracting methylation signals at scale\n- integrating heterogeneous tools into a cohesive workflow\n- summarizing methylation patterns across genomic regions\n\n\n\n\nI developed a modular pipeline that processes Nanopore data from raw POD5 files through methylation aggregation.\nThe workflow integrates established tools within a Nextflow framework, enabling reproducible execution, scalability across datasets, and clear separation of processing stages.\n\n\n\n\n\n\n\n\n\nont-methylation pipeline - Structured workflow from raw Nanopore signal data to aggregated methylation output.\nKey stages:\n\nBasecalling: POD5 → BAM using Dorado\n\nIndexing: BAM indexing with SAMtools for efficient downstream access\n\nQuality Control: assessment of alignment and read-level metrics\n\nMethylation Extraction: per-base modification calls using Modkit pileup\n\nGenome Integration: incorporation of chromosome sizes and genomic window definitions\n\nAggregation: summarization of methylation signals across defined genomic regions\n\n\n\n\n\n\nEnd-to-end processing\n\nfrom raw Nanopore signal data to region-level methylation summaries\n\nModular and extensible design\n\npipeline components can be executed independently or extended for additional analyses\n\nReproducibility\n\ncontainerized execution ensures consistent environments across runs\n\nScalability\n\ndesigned to handle large Nanopore sequencing datasets\n\n\n\n\n\n\n\nBAM files containing basecalled reads\n\nper-base methylation calls\n\naggregated methylation values across genomic windows\n\n\n\n\n\n\n\n\nNextflow-based pipeline orchestration\n\n\n\n\n\nDorado (basecalling)\n\nSAMtools (indexing and QC)\n\nModkit (methylation extraction)\n\n\n\n\n\ngeneration of genomic windows\n\naggregation of methylation signals across regions\n\n\n\n\n\nDocker-based containerization for consistent execution environments\n\n\n\n\n\nThe pipeline leverages Nextflow parallelization to efficiently process large Nanopore datasets, enabling scalable execution across multiple samples and compute environments.\n\n\n\n\n\n\n\ngenome-wide methylation profiling\n\ncomparative epigenetic analysis\n\nintegration with transcriptomic or genomic datasets\n\n\n\n\n\nhttps://github.com/fraserclaire/ont-methylation"
+  },
+  {
+    "objectID": "projects/ont-methylation.html#overview",
+    "href": "projects/ont-methylation.html#overview",
+    "title": "ONT Methylation Pipeline",
+    "section": "",
+    "text": "An end-to-end bioinformatics pipeline for detecting and summarizing DNA methylation from Oxford Nanopore sequencing data. The workflow converts raw signal data into interpretable genomic methylation patterns through a structured and reproducible analysis pipeline."
+  },
+  {
+    "objectID": "projects/ont-methylation.html#problem",
+    "href": "projects/ont-methylation.html#problem",
+    "title": "ONT Methylation Pipeline",
+    "section": "",
+    "text": "Oxford Nanopore sequencing enables direct detection of DNA modifications, but transforming raw signal data into biologically meaningful insights requires coordination across multiple tools and processing steps.\nKey challenges include: - converting raw signal data into high-quality basecalled reads\n- extracting methylation signals at scale\n- integrating heterogeneous tools into a cohesive workflow\n- summarizing methylation patterns across genomic regions"
+  },
+  {
+    "objectID": "projects/ont-methylation.html#approach",
+    "href": "projects/ont-methylation.html#approach",
+    "title": "ONT Methylation Pipeline",
+    "section": "",
+    "text": "I developed a modular pipeline that processes Nanopore data from raw POD5 files through methylation aggregation.\nThe workflow integrates established tools within a Nextflow framework, enabling reproducible execution, scalability across datasets, and clear separation of processing stages."
+  },
+  {
+    "objectID": "projects/ont-methylation.html#key-features",
+    "href": "projects/ont-methylation.html#key-features",
+    "title": "ONT Methylation Pipeline",
+    "section": "",
+    "text": "End-to-end processing\n\nfrom raw Nanopore signal data to region-level methylation summaries\n\nModular and extensible design\n\npipeline components can be executed independently or extended for additional analyses\n\nReproducibility\n\ncontainerized execution ensures consistent environments across runs\n\nScalability\n\ndesigned to handle large Nanopore sequencing datasets"
+  },
+  {
+    "objectID": "projects/ont-methylation.html#example-output",
+    "href": "projects/ont-methylation.html#example-output",
+    "title": "Claire Fraser | Bioinformatics Portfolio",
+    "section": "Example Output",
+    "text": "Example Output\n(screenshots or interactive plots)"
+  },
+  {
+    "objectID": "projects/ont-methylation.html#technical-implementation",
+    "href": "projects/ont-methylation.html#technical-implementation",
+    "title": "ONT Methylation Pipeline",
+    "section": "",
+    "text": "Nextflow-based pipeline orchestration\n\n\n\n\n\nDorado (basecalling)\n\nSAMtools (indexing and QC)\n\nModkit (methylation extraction)\n\n\n\n\n\ngeneration of genomic windows\n\naggregation of methylation signals across regions\n\n\n\n\n\nDocker-based containerization for consistent execution environments\n\n\n\n\n\nThe pipeline leverages Nextflow parallelization to efficiently process large Nanopore datasets, enabling scalable execution across multiple samples and compute environments."
+  },
+  {
+    "objectID": "projects/ont-methylation.html#github-repository",
+    "href": "projects/ont-methylation.html#github-repository",
+    "title": "ONT Methylation Pipeline",
+    "section": "",
+    "text": "https://github.com/fraserclaire/ont-methylation"
+  },
+  {
+    "objectID": "index.html#featured-projects",
+    "href": "index.html#featured-projects",
+    "title": "Claire Fraser",
+    "section": "",
+    "text": "Interactive tool for generating publication-ready figures from sequencing data.\n\n\n\n\n\nEnd-to-end pipeline for methylation analysis using Oxford Nanopore data.\n\n\n\n\n\nPhylogenetic and evolutionary analysis of SARS-CoV-2."
+  },
+  {
+    "objectID": "projects/sars-cov2.html",
+    "href": "projects/sars-cov2.html",
+    "title": "SARS-CoV-2 Evolutionary Analysis",
+    "section": "",
+    "text": "An evolutionary genomics analysis of SARS-CoV-2 aimed at characterizing viral diversity, transmission dynamics, and evolutionary pressures across populations.\nThis analysis provides insight into how viral evolution is shaped by both transmission dynamics and selective pressures.\n\n\n\n\nUnderstanding viral evolution is critical for tracking transmission, identifying emerging variants, and interpreting functional changes in the genome.\nChallenges include:\n\nmanaging and aligning large numbers of viral genomes\n\nidentifying meaningful sequence variation\n\nreconstructing evolutionary relationships\n\ninterpreting mutation patterns in a biological context\n\n\n\n\n\nI performed a comparative genomic, phylogenetic, and selection-based analysis of SARS-CoV-2 sequences to characterize temporal dynamics, geographic variation, and evolutionary pressures across variants.\nThe workflow includes sequence preprocessing, alignment, phylogenetic tree construction, and downstream analysis of evolutionary patterns.\n\n\n\n\n\nSequence collection and preprocessing\n\ncurated viral genome sequences\n\nMultiple sequence alignment\n\nalignment of genomes for comparative analysis\n\nPhylogenetic reconstruction\n\ninference of evolutionary relationships between samples\n\nSelection analysis\n\nidentification of sites under evolutionary pressure across the viral genome\n\n\n\n\n\n\nTo characterize viral dynamics, I examined temporal trends, geographic variation, and phylogenetic structure across SARS-CoV-2 variants.\n\n\n\n\n\n\n\n\n\nTemporal dynamics of SARS-CoV-2 cases and estimated reproduction number (Rt), including variant-specific trends.\nThis figure illustrates how case counts and transmission dynamics evolve over time, highlighting differences in transmission dynamics between variants and periods of increased spread.\n\n\n\n\n\n\n\n\n\nKernel density estimates comparing variant distributions between Hawaii County and Los Angeles County.\nThis analysis highlights geographic differences in variant prevalence, indicating distinct transmission dynamics and regional differences in variant prevalence.\n\n\n\n\n\n\n\n\n\nPhylogenetic trees of SARS-CoV-2 variants, with samples colored by geographic origin.\nThe phylogenies reveal differences in population structure: - one variant shows intermixing across regions, suggesting high gene flow\n- another shows clear separation, indicating more localized transmission\nThese patterns provide insight into how variants spread and evolve across populations.\n\n\n\n\nTo further characterize evolutionary pressures, I performed selection analyses to identify sites under positive or purifying selection across SARS-CoV-2 proteins.\n\n\n\n\n\n\n\n\nNumber of sites under selection across key protein-coding regions (e.g., ORF1a, Spike, ORF7a).\nThis analysis highlights differences in selective pressure across genomic regions, with certain proteins exhibiting higher concentrations of sites under selection, suggesting differential functional constraints and potential adaptive evolution across genomic regions.\n\n\n\n\n\n\n\n\n\nHeatmap of sites under selection across geographic locations and epidemiological phases (exponential vs waning).\nThis visualization reveals patterns of shared and unique selection signals, indicating that selective pressures vary across populations and epidemiological phases, with both shared and region-specific signals of selection.\n\n\n\n\n\n\n\n\nsequence alignment tools\nphylogenetic analysis (BEAST, Mesquite)\n\nselection analysis (FUBAR, FEL, MEME)\n\ndownstream analysis and visualization in R/Python\n\n\n\n\n\nsequence filtering and formatting\n\nalignment refinement\n\nextraction of variant positions\n\n\n\n\n\n\n\nvariant-specific differences in transmission dynamics over time\n\nregional variation in variant prevalence between populations\n\ncontrasting phylogenetic structures indicating both widespread mixing and localized transmission\n\nevidence of selection acting on specific protein-coding regions, with variation across locations and epidemiological phases\n\n\n\n\n\n\nviral surveillance and variant tracking\n\nevolutionary analysis of pathogens\n\ncomparative genomics studies\n\n\n\n\n\nhttps://github.com/fraserclaire/SARS-CoV-2_evolutionaryAnalysis"
+  },
+  {
+    "objectID": "projects/sars-cov2.html#overview",
+    "href": "projects/sars-cov2.html#overview",
+    "title": "SARS-CoV-2 Evolutionary Analysis",
+    "section": "",
+    "text": "An evolutionary genomics analysis of SARS-CoV-2 aimed at characterizing viral diversity, transmission dynamics, and evolutionary pressures across populations.\nThis analysis provides insight into how viral evolution is shaped by both transmission dynamics and selective pressures."
+  },
+  {
+    "objectID": "projects/sars-cov2.html#problem",
+    "href": "projects/sars-cov2.html#problem",
+    "title": "SARS-CoV-2 Evolutionary Analysis",
+    "section": "",
+    "text": "Understanding viral evolution is critical for tracking transmission, identifying emerging variants, and interpreting functional changes in the genome.\nChallenges include:\n\nmanaging and aligning large numbers of viral genomes\n\nidentifying meaningful sequence variation\n\nreconstructing evolutionary relationships\n\ninterpreting mutation patterns in a biological context"
+  },
+  {
+    "objectID": "projects/sars-cov2.html#approach",
+    "href": "projects/sars-cov2.html#approach",
+    "title": "SARS-CoV-2 Evolutionary Analysis",
+    "section": "",
+    "text": "I performed a comparative genomic, phylogenetic, and selection-based analysis of SARS-CoV-2 sequences to characterize temporal dynamics, geographic variation, and evolutionary pressures across variants.\nThe workflow includes sequence preprocessing, alignment, phylogenetic tree construction, and downstream analysis of evolutionary patterns."
+  },
+  {
+    "objectID": "projects/sars-cov2.html#key-features",
+    "href": "projects/sars-cov2.html#key-features",
+    "title": "Claire Fraser | Bioinformatics Portfolio",
+    "section": "Key Features",
+    "text": "Key Features\n\nFeature 1\nFeature 2"
+  },
+  {
+    "objectID": "projects/sars-cov2.html#example-output",
+    "href": "projects/sars-cov2.html#example-output",
+    "title": "Claire Fraser | Bioinformatics Portfolio",
+    "section": "Example Output",
+    "text": "Example Output\n(screenshots or interactive plots)"
+  },
+  {
+    "objectID": "projects/sars-cov2.html#technical-implementation",
+    "href": "projects/sars-cov2.html#technical-implementation",
+    "title": "SARS-CoV-2 Evolutionary Analysis",
+    "section": "",
+    "text": "sequence alignment tools\nphylogenetic analysis (BEAST, Mesquite)\n\nselection analysis (FUBAR, FEL, MEME)\n\ndownstream analysis and visualization in R/Python\n\n\n\n\n\nsequence filtering and formatting\n\nalignment refinement\n\nextraction of variant positions"
+  },
+  {
+    "objectID": "projects/sars-cov2.html#github-repository",
+    "href": "projects/sars-cov2.html#github-repository",
+    "title": "SARS-CoV-2 Evolutionary Analysis",
+    "section": "",
+    "text": "https://github.com/fraserclaire/SARS-CoV-2_evolutionaryAnalysis"
+  },
+  {
+    "objectID": "projects/ont-methylation.html#pipeline-workflow",
+    "href": "projects/ont-methylation.html#pipeline-workflow",
+    "title": "ONT Methylation Pipeline",
+    "section": "",
+    "text": "ont-methylation pipeline - Structured workflow from raw Nanopore signal data to aggregated methylation output.\nKey stages:\n\nBasecalling: POD5 → BAM using Dorado\n\nIndexing: BAM indexing with SAMtools for efficient downstream access\n\nQuality Control: assessment of alignment and read-level metrics\n\nMethylation Extraction: per-base modification calls using Modkit pileup\n\nGenome Integration: incorporation of chromosome sizes and genomic window definitions\n\nAggregation: summarization of methylation signals across defined genomic regions"
+  },
+  {
+    "objectID": "projects/ont-methylation.html#example-outputs",
+    "href": "projects/ont-methylation.html#example-outputs",
+    "title": "ONT Methylation Pipeline",
+    "section": "",
+    "text": "BAM files containing basecalled reads\n\nper-base methylation calls\n\naggregated methylation values across genomic windows"
+  },
+  {
+    "objectID": "projects/ont-methylation.html#use-cases",
+    "href": "projects/ont-methylation.html#use-cases",
+    "title": "ONT Methylation Pipeline",
+    "section": "",
+    "text": "genome-wide methylation profiling\n\ncomparative epigenetic analysis\n\nintegration with transcriptomic or genomic datasets"
+  },
+  {
+    "objectID": "projects/sars-cov2.html#analysis-workflow",
+    "href": "projects/sars-cov2.html#analysis-workflow",
+    "title": "SARS-CoV-2 Evolutionary Analysis",
+    "section": "",
+    "text": "Sequence collection and preprocessing\n\ncurated viral genome sequences\n\nMultiple sequence alignment\n\nalignment of genomes for comparative analysis\n\nPhylogenetic reconstruction\n\ninference of evolutionary relationships between samples\n\nSelection analysis\n\nidentification of sites under evolutionary pressure across the viral genome"
+  },
+  {
+    "objectID": "projects/sars-cov2.html#key-analyses",
+    "href": "projects/sars-cov2.html#key-analyses",
+    "title": "SARS-CoV-2 Evolutionary Analysis",
+    "section": "",
+    "text": "To characterize viral dynamics, I examined temporal trends, geographic variation, and phylogenetic structure across SARS-CoV-2 variants."
+  },
+  {
+    "objectID": "projects/sars-cov2.html#epidemiological-trends",
+    "href": "projects/sars-cov2.html#epidemiological-trends",
+    "title": "SARS-CoV-2 Evolutionary Analysis",
+    "section": "",
+    "text": "Temporal dynamics of SARS-CoV-2 cases and estimated reproduction number (Rt), including variant-specific trends.\nThis figure illustrates how case counts and transmission dynamics evolve over time, highlighting differences in transmission dynamics between variants and periods of increased spread."
+  },
+  {
+    "objectID": "projects/sars-cov2.html#geographic-distribution-of-variants",
+    "href": "projects/sars-cov2.html#geographic-distribution-of-variants",
+    "title": "SARS-CoV-2 Evolutionary Analysis",
+    "section": "",
+    "text": "Kernel density estimates comparing variant distributions between Hawaii County and Los Angeles County.\nThis analysis highlights geographic differences in variant prevalence, indicating distinct transmission dynamics and regional differences in variant prevalence."
+  },
+  {
+    "objectID": "projects/sars-cov2.html#phylogenetic-analysis",
+    "href": "projects/sars-cov2.html#phylogenetic-analysis",
+    "title": "SARS-CoV-2 Evolutionary Analysis",
+    "section": "",
+    "text": "Phylogenetic trees of SARS-CoV-2 variants, with samples colored by geographic origin.\nThe phylogenies reveal differences in population structure: - one variant shows intermixing across regions, suggesting high gene flow\n- another shows clear separation, indicating more localized transmission\nThese patterns provide insight into how variants spread and evolve across populations."
+  },
+  {
+    "objectID": "projects/sars-cov2.html#selection-analysis",
+    "href": "projects/sars-cov2.html#selection-analysis",
+    "title": "SARS-CoV-2 Evolutionary Analysis",
+    "section": "",
+    "text": "To further characterize evolutionary pressures, I performed selection analyses to identify sites under positive or purifying selection across SARS-CoV-2 proteins.\n\n\n\n\n\n\n\n\nNumber of sites under selection across key protein-coding regions (e.g., ORF1a, Spike, ORF7a).\nThis analysis highlights differences in selective pressure across genomic regions, with certain proteins exhibiting higher concentrations of sites under selection, suggesting differential functional constraints and potential adaptive evolution across genomic regions.\n\n\n\n\n\n\n\n\n\nHeatmap of sites under selection across geographic locations and epidemiological phases (exponential vs waning).\nThis visualization reveals patterns of shared and unique selection signals, indicating that selective pressures vary across populations and epidemiological phases, with both shared and region-specific signals of selection."
+  },
+  {
+    "objectID": "projects/sars-cov2.html#key-insights",
+    "href": "projects/sars-cov2.html#key-insights",
+    "title": "SARS-CoV-2 Evolutionary Analysis",
+    "section": "",
+    "text": "variant-specific differences in transmission dynamics over time\n\nregional variation in variant prevalence between populations\n\ncontrasting phylogenetic structures indicating both widespread mixing and localized transmission\n\nevidence of selection acting on specific protein-coding regions, with variation across locations and epidemiological phases"
+  },
+  {
+    "objectID": "projects/sars-cov2.html#use-cases",
+    "href": "projects/sars-cov2.html#use-cases",
+    "title": "SARS-CoV-2 Evolutionary Analysis",
+    "section": "",
+    "text": "viral surveillance and variant tracking\n\nevolutionary analysis of pathogens\n\ncomparative genomics studies"
+  }
+]

@@ -1,0 +1,22 @@
+project:
+  type: website
+
+website:
+  title: "Claire Fraser | Bioinformatics Portfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Projects
+        menu:
+          - href: projects/seq-visualizer.qmd
+            text: NGS Figure Generator
+          - href: projects/ont-methylation.qmd
+            text: ONT Methylation Pipeline
+          - href: projects/sars-cov2.qmd
+            text: SARS-CoV-2 Evolution
+
+format:
+  html:
+    theme: sandstone
+    css: styles.css

@@ -1,0 +1,34 @@
+# Claire Fraser
+
+Bioinformatics | Data Science | NGS Analysis
+
+I build reproducible bioinformatics pipelines, develop tools for interactive data visualization, and apply evolutionary and statistical methods to extract biological insight from high-throughput sequencing data.
+
+---
+
+## Featured Projects
+
+::: {.columns}
+
+::: {.column width="33%"}
+### [NGS Figure Generator](projects/seq-visualizer.qmd)
+Interactive tool for generating publication-ready figures from sequencing data.
+
+[![ ](images/volcano.png)](projects/seq-visualizer.qmd)
+:::
+
+::: {.column width="33%"}
+### [ONT Methylation Pipeline](projects/ont-methylation.qmd)
+End-to-end pipeline for methylation analysis using Oxford Nanopore data.
+
+[![ ](images/ont-methylation_flowchart.png)](projects/ont-methylation.qmd)
+:::
+
+::: {.column width="33%"}
+### [SARS-CoV-2 Analysis](projects/sars-cov2.qmd)
+Phylogenetic and evolutionary analysis of SARS-CoV-2.
+
+[![ ](images/sars-cov2-casevarrtplots.png)](projects/sars-cov2.qmd)
+:::
+
+:::

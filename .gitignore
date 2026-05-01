@@ -18,6 +18,7 @@ _site/
 site_libs/
 *.html
 *.quarto_ipynb*
+search.json
 
 # Logs
 *.log

@@ -102,14 +102,14 @@
     "href": "index.html",
     "title": "Claire Jisu Fraser",
     "section": "",
-    "text": "Bioinformatics | Data Systems | Genomics\nI design and build reproducible bioinformatics pipelines and data workflows that integrate sequencing data, experimental metadata, and analytical outputs into scalable, reusable systems. My work transforms high-throughput genomics data into structured, queryable datasets that support cross-project analysis, interactive visualization, and scientific discovery.\n\n\n\n\n\n\n\nDesigned a reproducible Nextflow-based pipeline to process sequencing data into structured methylation outputs, enabling consistent cross-sample analysis.\n\n\n\n\n\nIntegrated genomic sequence data and metadata to support reproducible phylogenetic analysis and cross-sample comparison of SARS-CoV-2 variants.\n\n\n\n\n\n\n\n\nDeveloped an interactive platform to standardize heterogeneous RNA-seq outputs into reproducible, publication-ready visualizations."
+    "text": "Bioinformatics | Data Systems | Genomics\nI design and build reproducible bioinformatics pipelines and data workflows that integrate sequencing data, experimental metadata, and analytical outputs into scalable, reusable systems. My work transforms high-throughput genomics data into structured, queryable datasets that support cross-project analysis, interactive visualization, and scientific discovery.\n\n\n\n\n\n\n\nDesigned a reproducible Nextflow-based pipeline to process Oxford Nanopore (ONT) sequencing data into structured methylation outputs, enabling consistent cross-sample analysis.\n\n\n\n\n\nIntegrated genomic sequence data and metadata to support reproducible phylogenetic analysis and cross-sample comparison of SARS-CoV-2 variants.\n\n\n\n\n\n\n\n\nDeveloped an interactive platform to standardize heterogeneous RNA-seq outputs into reproducible, publication-ready visualizations."
   },
   {
     "objectID": "index.html#featured-projects",
     "href": "index.html#featured-projects",
     "title": "Claire Jisu Fraser",
     "section": "",
-    "text": "Designed a reproducible Nextflow-based pipeline to process sequencing data into structured methylation outputs, enabling consistent cross-sample analysis.\n\n\n\n\n\nIntegrated genomic sequence data and metadata to support reproducible phylogenetic analysis and cross-sample comparison of SARS-CoV-2 variants.\n\n\n\n\n\n\n\n\nDeveloped an interactive platform to standardize heterogeneous RNA-seq outputs into reproducible, publication-ready visualizations."
+    "text": "Designed a reproducible Nextflow-based pipeline to process Oxford Nanopore (ONT) sequencing data into structured methylation outputs, enabling consistent cross-sample analysis.\n\n\n\n\n\nIntegrated genomic sequence data and metadata to support reproducible phylogenetic analysis and cross-sample comparison of SARS-CoV-2 variants.\n\n\n\n\n\n\n\n\nDeveloped an interactive platform to standardize heterogeneous RNA-seq outputs into reproducible, publication-ready visualizations."
   },
   {
     "objectID": "projects/sars-cov2.html",

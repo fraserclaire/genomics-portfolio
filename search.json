@@ -100,14 +100,14 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Claire Fraser",
+    "title": "Claire Jisu Fraser",
     "section": "",
     "text": "Bioinformatics | Data Systems | Genomics\nI build reproducible bioinformatics pipelines and data workflows that integrate sequencing data, experimental metadata, and analytical outputs into structured, reusable systems. My work focuses on transforming high-throughput genomics data into queryable datasets that support cross-project analysis, visualization, and scientific discovery.\n\n\n\n\n\n\n\nDesigned a reproducible Nextflow-based pipeline to process sequencing data into structured methylation outputs, enabling consistent cross-sample analysis.\n\n\n\n\n\nIntegrated genomic sequence data and metadata to support reproducible phylogenetic analysis and cross-sample comparison of SARS-CoV-2 variants.\n\n\n\n\n\nDeveloped an interactive platform to standardize heterogeneous RNA-seq outputs into reproducible, publication-ready visualizations."
   },
   {
     "objectID": "index.html#featured-projects-built",
     "href": "index.html#featured-projects-built",
-    "title": "Claire Fraser",
+    "title": "Claire Jisu Fraser",
     "section": "",
     "text": "Designed a reproducible Nextflow-based pipeline to process sequencing data into structured methylation outputs, enabling consistent cross-sample analysis.\n\n\n\n\n\nIntegrated genomic sequence data and metadata to support reproducible phylogenetic analysis and cross-sample comparison of SARS-CoV-2 variants.\n\n\n\n\n\nDeveloped an interactive platform to standardize heterogeneous RNA-seq outputs into reproducible, publication-ready visualizations."
   },

@@ -9,6 +9,7 @@ An end-to-end bioinformatics pipeline for detecting and summarizing DNA methylat
 Oxford Nanopore sequencing enables direct detection of DNA modifications, but transforming raw signal data into biologically meaningful insights requires coordination across multiple tools and processing steps.
 
 Key challenges include:
+
 - converting raw signal data into high-quality basecalled reads  
 - extracting methylation signals at scale  
 - integrating heterogeneous tools into a cohesive workflow  
@@ -67,21 +68,26 @@ The workflow integrates established tools within a Nextflow framework, enabling 
 ## Technical Implementation
 
 ### Workflow Management
+
 - Nextflow-based pipeline orchestration  
 
 ### Tools
+
 - Dorado (basecalling)  
 - SAMtools (indexing and QC)  
 - Modkit (methylation extraction)  
 
 ### Data Processing
+
 - generation of genomic windows  
 - aggregation of methylation signals across regions  
 
 ### Reproducibility
+
 - Docker-based containerization for consistent execution environments  
 
 ### Performance
+
 - The pipeline leverages Nextflow parallelization to efficiently process large Nanopore datasets, enabling scalable execution across multiple samples and compute environments.
 
 ---

@@ -1,34 +1,34 @@
 # Claire Fraser
 
-Bioinformatics | Data Science | NGS Analysis
+Bioinformatics | Data Systems | Genomics
 
-I build reproducible bioinformatics pipelines, develop tools for interactive data visualization, and apply evolutionary and statistical methods to extract biological insight from high-throughput sequencing data.
+I build reproducible bioinformatics pipelines and data workflows that integrate sequencing data, experimental metadata, and analytical outputs into structured, reusable systems. My work focuses on transforming high-throughput genomics data into queryable datasets that support cross-project analysis, visualization, and scientific discovery.
 
 ---
 
-## Featured Projects
+## Featured Projects Built
 
 ::: {.columns}
 
 ::: {.column width="33%"}
-### [NGS Figure Generator](projects/seq-visualizer.qmd)
-Interactive tool for generating publication-ready figures from sequencing data.
-
-[![ ](images/volcano.png)](projects/seq-visualizer.qmd)
-:::
-
-::: {.column width="33%"}
 ### [ONT Methylation Pipeline](projects/ont-methylation.qmd)
-End-to-end pipeline for methylation analysis using Oxford Nanopore data.
+Designed a reproducible Nextflow-based pipeline to process sequencing data into structured methylation outputs, enabling consistent cross-sample analysis.
 
 [![ ](images/ont-methylation_flowchart.png)](projects/ont-methylation.qmd)
 :::
 
 ::: {.column width="33%"}
-### [SARS-CoV-2 Analysis](projects/sars-cov2.qmd)
-Phylogenetic and evolutionary analysis of SARS-CoV-2.
+### [SARS-CoV-2 Genomic Analysis](projects/sars-cov2.qmd)
+Integrated genomic sequence data and metadata to support reproducible phylogenetic analysis and cross-sample comparison of SARS-CoV-2 variants.
 
 [![ ](images/sars-cov2-casevarrtplots.png)](projects/sars-cov2.qmd)
+:::
+
+::: {.column width="33%"}
+### [NGS Figure Generator](projects/seq-visualizer.qmd)
+Developed an interactive platform to standardize heterogeneous RNA-seq outputs into reproducible, publication-ready visualizations.
+
+[![ ](images/volcano.png)](projects/seq-visualizer.qmd)
 :::
 
 :::

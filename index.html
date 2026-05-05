@@ -135,29 +135,29 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="claire-fraser" class="level1">
 <h1>Claire Fraser</h1>
-<p>Bioinformatics | Data Science | NGS Analysis</p>
-<p>I build reproducible bioinformatics pipelines, develop tools for interactive data visualization, and apply evolutionary and statistical methods to extract biological insight from high-throughput sequencing data.</p>
+<p>Bioinformatics | Data Systems | Genomics</p>
+<p>I build reproducible bioinformatics pipelines and data workflows that integrate sequencing data, experimental metadata, and analytical outputs into structured, reusable systems. My work focuses on transforming high-throughput genomics data into queryable datasets that support cross-project analysis, visualization, and scientific discovery.</p>
 <hr>
-<section id="featured-projects" class="level2">
-<h2 class="anchored" data-anchor-id="featured-projects">Featured Projects</h2>
+<section id="featured-projects-built" class="level2">
+<h2 class="anchored" data-anchor-id="featured-projects-built">Featured Projects Built</h2>
 <div class="columns">
 <div class="column" style="width:33%;">
-<section id="ngs-figure-generator" class="level3">
-<h3 class="anchored" data-anchor-id="ngs-figure-generator"><a href="./projects/seq-visualizer.html">NGS Figure Generator</a></h3>
-<p>Interactive tool for generating publication-ready figures from sequencing data.</p>
-<p><a href="./projects/seq-visualizer.html"><img src="images/volcano.png" class="img-fluid"></a></p>
-</section>
-</div><div class="column" style="width:33%;">
 <section id="ont-methylation-pipeline" class="level3">
 <h3 class="anchored" data-anchor-id="ont-methylation-pipeline"><a href="./projects/ont-methylation.html">ONT Methylation Pipeline</a></h3>
-<p>End-to-end pipeline for methylation analysis using Oxford Nanopore data.</p>
+<p>Designed a reproducible Nextflow-based pipeline to process sequencing data into structured methylation outputs, enabling consistent cross-sample analysis.</p>
 <p><a href="./projects/ont-methylation.html"><img src="images/ont-methylation_flowchart.png" class="img-fluid"></a></p>
 </section>
 </div><div class="column" style="width:33%;">
-<section id="sars-cov-2-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="sars-cov-2-analysis"><a href="./projects/sars-cov2.html">SARS-CoV-2 Analysis</a></h3>
-<p>Phylogenetic and evolutionary analysis of SARS-CoV-2.</p>
+<section id="sars-cov-2-genomic-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="sars-cov-2-genomic-analysis"><a href="./projects/sars-cov2.html">SARS-CoV-2 Genomic Analysis</a></h3>
+<p>Integrated genomic sequence data and metadata to support reproducible phylogenetic analysis and cross-sample comparison of SARS-CoV-2 variants.</p>
 <p><a href="./projects/sars-cov2.html"><img src="images/sars-cov2-casevarrtplots.png" class="img-fluid"></a></p>
+</section>
+</div><div class="column" style="width:33%;">
+<section id="ngs-figure-generator" class="level3">
+<h3 class="anchored" data-anchor-id="ngs-figure-generator"><a href="./projects/seq-visualizer.html">NGS Figure Generator</a></h3>
+<p>Developed an interactive platform to standardize heterogeneous RNA-seq outputs into reproducible, publication-ready visualizations.</p>
+<p><a href="./projects/seq-visualizer.html"><img src="images/volcano.png" class="img-fluid"></a></p>
 </section>
 </div>
 </div>
@@ -240,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/fraserclaire\.github\.io\/genomics-portfolio\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
